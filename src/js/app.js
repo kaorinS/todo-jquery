@@ -90,8 +90,7 @@ $(document).on("keyup", ".js-todo_list-editArea", function(e){
 $(document).on("blur", ".js-todo_list-editArea", function(e){
     const $this = $(this);
     const todoText = $this.siblings(".js-todo_list-text").text();
-    console.log("todoText : " + todoText);
-    // console.log($this.val());
+    // console.log("todoText : " + todoText);
     if(!$this.val()){
       $this.val(todoText);
     }

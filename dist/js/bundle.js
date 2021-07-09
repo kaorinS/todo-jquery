@@ -140,8 +140,7 @@ $(function () {
     $(document).on("blur", ".js-todo_list-editArea", function (e) {
         var $this = $(this);
         var todoText = $this.siblings(".js-todo_list-text").text();
-        console.log("todoText : " + todoText);
-        // console.log($this.val());
+        // console.log("todoText : " + todoText);
         if (!$this.val()) {
             $this.val(todoText);
         }
