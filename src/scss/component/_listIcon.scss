@@ -1,0 +1,15 @@
+@use "../global" as *;
+
+.c-listIcon {
+  cursor: pointer;
+  font-size: 22px;
+  transition: 0.5s transform;
+  @include mq() {
+    font-size: 18px;
+  }
+
+  &:hover {
+    transform: scale(1.2);
+    transition: 0.5s transform;
+  }
+}

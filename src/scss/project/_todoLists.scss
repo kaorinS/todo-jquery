@@ -1,0 +1,50 @@
+@use "../global" as g;
+
+// .p-todoLists
+.p-todoList{
+    margin-top: 1.6rem;
+}
+
+.p-listItem{
+    border: 2px solid g.$borderColor-todoList;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding: 1.6rem;
+    transition: .5s transform;
+
+    &__text{
+        flex-grow: 4;
+        font-weight: 700;
+        line-height: 1.5;
+        margin-left: g.$mg-todoListText;
+    }
+
+    &__trash{
+        color: g.$mainColor;
+        float: right;
+        position: relative;
+    }
+
+    &:hover{
+        transform: scale(1.03);
+        transition: .5s transform;
+    }
+
+    & + & {
+        margin-top: 0.2rem;
+    }
+}
+
+.p-todoItem{
+    background-color: #fff;
+
+    &__icon{
+        color: g.$fontColor-sub;
+    }
+}
+
+.p-doneItem{
+    background-color: g.$borderColor-todoList;
+    color: g.$fontColor-sub;
+}

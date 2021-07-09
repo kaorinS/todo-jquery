@@ -1,0 +1,6 @@
+@forward "./color";
+@forward "./size";
+@forward "./space";
+
+// ブレイクポイント
+$breakpoint: 'print, screen and (min-width: 560px)' !default;

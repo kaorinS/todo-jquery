@@ -1,0 +1,8 @@
+@use "../variable" as v;
+
+// ブレイクポイント
+@mixin mq(){
+    @media #{v.$breakpoint} {
+        @content;
+    }
+}

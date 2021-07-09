@@ -1,0 +1,8 @@
+@use "../global" as g;
+
+// .c-inputArea
+.c-inputArea{
+    border: 1px solid;
+    box-sizing: border-box;
+    padding: 0 g.$pad-inputArea;
+}

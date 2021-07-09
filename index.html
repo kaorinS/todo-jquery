@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        TODO LIST(jQuery)
+    </title>
+    <link rel="stylesheet" href="./public/css/style.min.css">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/bb3faf1fb5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="l-header">
+        <div class="p-header">
+            <h1 class="p-header__title">TODO<span class="p-header__pad">!!!</span></h1>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main class="l-main">
+        <div class="p-main">
+            <!-- todo追加 -->
+            <form class="p-addTodo">
+                <div class="p-addTodo__inputArea">
+                    <span class="p-addTodo__error js-toggle-error">入力が空です</span>
+                    <input type="text" class="c-inputArea p-addTodo__inputText js-get-val" placeholder="TODO内容を書く">
+                </div>
+                <button class="p-addTodo__btn js-add-todo">
+                    TODO 追加!!!
+                </button>
+            </form>
+
+            <!-- 検索 -->
+            <div class="c-inputArea p-searchBox">
+                <i class="fas fa-search p-searchBox__icon"></i>
+                <input type="text" class="p-searchBox__input js-search" value="" placeholder="キーワードを入力する">
+            </div>
+
+            <!-- todoリスト -->
+            <ul class="p-todoList js-todo_list">
+                <li class="p-listItem p-todoItem js-list_item" data-text="サンプルTODOタスク">
+                    <i class="far fa-circle c-listIcon p-todoItem__icon js-to-done"></i>
+                    <span class="p-listItem__text js-todo_list-text">サンプルTODOタスク</span>
+                    <input type="text" class="js-todo_list-editArea" value="サンプルTODOタスク">
+                    <i class="fas fa-trash-alt c-listIcon p-listItem__trash js-to-delete"></i>
+                </li>
+                <li class="p-listItem p-doneItem js-list_item" data-text="サンプルDONEタスク">
+                    <i class="fas fa-check-circle c-listIcon p-doneItem__icon js-to-todo"></i>
+                    <span class="p-listItem__text js-todo_list-text">サンプルDONEタスク</span>
+                    <input type="text" class="js-todo_list-editArea" value="サンプルDONEタスク">
+                    <i class="fas fa-trash-alt c-listIcon p-listItem__trash js-to-delete"></i>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <script src="./public/js/bundle.min.js"></script>
+</body>
+
+</html>

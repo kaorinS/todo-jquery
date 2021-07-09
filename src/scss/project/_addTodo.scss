@@ -1,0 +1,59 @@
+@use "../global" as g;
+
+// .p-addTodo
+.p-addTodo {
+  width: 100%;
+
+  &__inputArea {
+    width: 100%;
+  }
+
+  &__inputText {
+    border-color: g.$borderColor-default;
+    border-radius: 4px;
+    font-size: g.$fontSize-input;
+    height: 45px;
+    margin-top: 0.8rem;
+    padding-left: 16px;
+    width: 100%;
+
+    &::placeholder {
+      color: g.$fontColor-sub;
+      font-size: g.$fontSize-input;
+    }
+
+    &:focus{
+        outline: none;
+    }
+  }
+
+  &__error{
+      color: g.$errorColor;
+      display: none;
+      font-weight: 700;
+      padding-left: 0.4rem;
+  }
+
+  &__btn{
+      background-color: g.$mainColor;
+      border: none;
+      border-radius: 2rem;
+      color: #fff;
+      display: block;
+      font-size: g.$fontSize-input;
+      font-weight: 700;
+      margin-top: 1.6rem;
+      margin-right: 0;
+      margin-bottom: 0;
+      margin-left: auto;
+      padding: 1.2rem 3.2rem;
+      @include g.mq() {
+        padding: 0.8rem 3.2rem;
+        border-radius: 1.6rem;
+      }
+
+      &:hover{
+          cursor: pointer;
+      }
+  }
+}

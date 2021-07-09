@@ -1,0 +1,16 @@
+@use "../global" as g;
+
+// todoListテキスト
+.js-todo_list-editArea{
+    background-color: rgba($color: #fff, $alpha: 0);
+    border: none;
+    box-sizing: border-box;
+    display: none;
+    flex-grow: 4;
+    margin-left: g.$mg-todoListText;
+    padding: 0;
+
+    &:focus{
+        outline: none;
+    }
+}

@@ -1,0 +1,9 @@
+@use "../global" as *;
+
+// .p-main
+.p-main {
+  @include mq() {
+    padding-top: 64px;
+  }
+  padding-top: 32px;
+}
