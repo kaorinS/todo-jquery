@@ -139,7 +139,7 @@ $(function () {
     });
     $(document).on("blur", ".js-todo_list-editArea", function (e) {
         var $this = $(this);
-        console.log($this.val());
+        // console.log($this.val());
         if (!$this.val()) {
             return;
         }

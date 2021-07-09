@@ -89,7 +89,7 @@ $(document).on("keyup", ".js-todo_list-editArea", function(e){
 });
 $(document).on("blur", ".js-todo_list-editArea", function(e){
     const $this = $(this);
-    console.log($this.val());
+    // console.log($this.val());
     if(!$this.val()){
       return;
     }
