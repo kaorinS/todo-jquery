@@ -80,15 +80,19 @@ $(document).on("focus", ".js-todo_list-editArea", function(){
 var keydownCode = 0;
 $(document).on("keydown", ".js-todo_list-editArea", function(e){
     keydownCode = e.which;
-    console.log(keydownCode);
+    // console.log(keydownCode);
 });
 $(document).on("keyup", ".js-todo_list-editArea", function(e){
     if(( 13 === keydownCode && e.which === keydownCode) || (e.keyCode === 13 && e.shiftKey === true )){
         $(this).blur();
     }
 });
-$(document).on("blur", ".js-todo_list-editArea", function(){
+$(document).on("blur", ".js-todo_list-editArea", function(e){
     const $this = $(this);
+    console.log($this.val());
+    if(!$this.val()){
+      return;
+    }
     $this
       .hide()
       .siblings(".js-todo_list-text")
