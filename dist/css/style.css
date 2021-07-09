@@ -402,7 +402,7 @@ body {
           flex-grow: 4;
   font-weight: 700;
   line-height: 1.5;
-  margin-left: 2.4rem;
+  margin: 0 1.2rem;
 }
 .p-listItem__trash {
   color: #f69fac;
@@ -442,7 +442,7 @@ body {
   -webkit-box-flex: 4;
       -ms-flex-positive: 4;
           flex-grow: 4;
-  margin-left: 2.4rem;
+  margin-left: 1.2rem;
   padding: 0;
 }
 .js-todo_list-editArea:focus {
