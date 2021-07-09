@@ -139,9 +139,11 @@ $(function () {
     });
     $(document).on("blur", ".js-todo_list-editArea", function (e) {
         var $this = $(this);
+        var todoText = $this.siblings(".js-todo_list-text").text();
+        console.log("todoText : " + todoText);
         // console.log($this.val());
         if (!$this.val()) {
-            return;
+            $this.val(todoText);
         }
         $this.hide().siblings(".js-todo_list-text").text($this.val()).show().closest(".js-list_item").attr('data-text', $this.val());
     });
