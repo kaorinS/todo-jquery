@@ -3,10 +3,12 @@ jQueryを使用して、TODOリストを作成しました！
 
 # DEMO
 PC
+
 ![todo_jquery](https://user-images.githubusercontent.com/60454823/125020403-bf688d00-e0b3-11eb-95c8-00e5d32dec1a.png)
 
 スマホ
-![todo_jquery_sp](https://user-images.githubusercontent.com/60454823/125020409-c1cae700-e0b3-11eb-8562-e6bfa786a2a1.jpg)
+
+![todo_jquery_sp](https://user-images.githubusercontent.com/60454823/125021406-85988600-e0b5-11eb-9583-b721d2861517.jpg)
 
 # Features　特徴
 
